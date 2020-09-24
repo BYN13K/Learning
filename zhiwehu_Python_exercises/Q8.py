@@ -21,7 +21,7 @@ def sorting(words):
     list_words.sort()
     print(",".join(list_words))
 
-a = "without,hello,bag,world"
+a = " without,hello,bag,world"
 
 sorting(a)
 
@@ -29,4 +29,9 @@ b = input("Input words separated whit comas: ")
 
 sorting(b)
 
-
+"""
+solution
+items=[x for x in input().split(',')] #trzeba pamietac o spajach
+items.sort()
+print(','.join(items))
+"""
