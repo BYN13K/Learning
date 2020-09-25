@@ -17,3 +17,15 @@ We use set container to remove duplicated data automatically and then use sorted
 """
 
 
+def sort(line):
+    splited = line.split(" ")
+    l = set(splited)
+    sorted = list(l)
+    sorted.sort()
+
+    print(" ".join(sorted))
+
+a = "hello world and practice makes perfect and hello world again"
+sort(a)
+
+sort(input("Pleas write the words whit whitespaces separation: "))   
