@@ -7,7 +7,25 @@ Question: Write a program that computes the value of a+aa+aaa+aaaa with a given 
 Hints: In case of input data being supplied to the question, it should be assumed to be a console input.
 
 """
+con = True
 
-a = 9
 
+def count():
+    a = input('Pleas input a number:')
 
+    if a.isdigit() and len(a) == 1:
+        a = int(a)
+        doble = int(str(a) * 2)
+        triple = int(str(a) * 3)
+        forth = int(str(a) * 4)
+    else:
+        print("Pleas input silgle number")
+    print(a+doble+triple+forth)
+
+while con:
+    count()
+    repet = input("Again? (Y/N):")
+    if repet.lower() == "y" :
+        continue
+    else:
+        con = False 
