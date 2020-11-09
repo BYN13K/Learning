@@ -2,7 +2,8 @@
 # Level 3
 
 # Question:
-# You are required to write a program to sort the (name, age, height) tuples by ascending order where name is string, age and height are numbers. The tuples are input by console. The sort criteria is:
+# You are required to write a program to sort the (name, age, height) tuples by ascending order where name is string, age and height are numbers. 
+# The tuples are input by console. The sort criteria is:
 # 1: Sort based on name;
 # 2: Then sort based on age;
 # 3: Then sort by score.
@@ -19,5 +20,12 @@
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 # We use itemgetter to enable multiple sort keys.
+##################################################################
+# dane wejsciowe dzielimy ',' i zapisujemy w formie (str,int,int)
+# porwonujemy [0] i gdy jest rowne to [1] itd..
+# binary tree?? - mozna sortowac przy wprowadzaniu danych. - TODO komenda drukoania - przerost formy nad zadaniem
+# zwykła lista tez da rade - sortowanie przy wprowadzaniu danych zalatwi sprawe
+
+
 
 
