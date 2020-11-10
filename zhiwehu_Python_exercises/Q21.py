@@ -22,6 +22,28 @@
 
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
+##############
+# spilt ' ' 
+# if 'UP' in string'
+# input from consol
 
+import math
 
+position = [0,0]
+while True:
+    move = (input(f"set direction UP, DOWN, LEFT, RIGHT and the amaund of steps or 'q' for print distance nad quit: ")).upper()
+    move = move.split(' ')
+    print(move)
+    if 'UP' in move:
+        position[0] += int(move[1])
+    elif 'DOWN' in move:
+        position[0] -= int(move[1])
+    elif 'LEFT' in move:
+        position[1] += int(move[1])
+    elif 'RIGHT' in move:
+        position[1] -= int(move[1])
+    elif move[0] == 'Q':
+        print(f"Distance from start position is {math.sqrt((position[0]^ 2) + (position[1] ^ 2)) }")
+        break
+    
 
